@@ -1,4 +1,4 @@
-# cert-checker-56bf70
+# cert-checker-b5a54d
 
 A Node.js cert-checker utility.
 

