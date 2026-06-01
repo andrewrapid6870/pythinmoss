@@ -1,5 +1,5 @@
 'use strict';
-const APP_TAG = 'cert-checker-b5a54d';
+const APP_TAG = 'cert-checker-8f55bf';
 async function execute() {
   console.log(`[${APP_TAG}] Starting...`);
   const start = Date.now();
